@@ -1,0 +1,110 @@
+@font-face {
+    font-family: 'Sansation';
+    src: url('Sansation-Bold.woff2') format('woff2'),
+        url('Sansation-Bold.woff') format('woff'),
+        url('Sansation-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sansation';
+    src: url('SansationBold.woff2') format('woff2'),
+        url('SansationBold.woff') format('woff'),
+        url('SansationBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sansation';
+    src: url('SansationLight.woff2') format('woff2'),
+        url('SansationLight.woff') format('woff'),
+        url('SansationLight.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sansation';
+    src: url('SansationRegular.woff2') format('woff2'),
+        url('SansationRegular.woff') format('woff'),
+        url('SansationRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sansation';
+    src: url('SansationItalic.woff2') format('woff2'),
+        url('SansationItalic.woff') format('woff'),
+        url('SansationItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sansation';
+    src: url('SansationItalic_1.woff2') format('woff2'),
+        url('SansationItalic_1.woff') format('woff'),
+        url('SansationItalic_1.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sansation';
+    src: url('SansationBoldItalic.woff2') format('woff2'),
+        url('SansationBoldItalic.woff') format('woff'),
+        url('SansationBoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sansation';
+    src: url('SansationBoldItalic_1.woff2') format('woff2'),
+        url('SansationBoldItalic_1.woff') format('woff'),
+        url('SansationBoldItalic_1.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sansation';
+    src: url('SansationBold_1.woff2') format('woff2'),
+        url('SansationBold_1.woff') format('woff'),
+        url('SansationBold_1.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sansation';
+    src: url('SansationRegular_1.woff2') format('woff2'),
+        url('SansationRegular_1.woff') format('woff'),
+        url('SansationRegular_1.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sansation';
+    src: url('Sansation-Light.woff2') format('woff2'),
+        url('Sansation-Light.woff') format('woff'),
+        url('Sansation-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
