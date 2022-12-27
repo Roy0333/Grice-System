@@ -1,4 +1,6 @@
 $(document).ready(function(){
+
+  // nav bar bg change on scroll js 
   $(window).scroll(function() {
     if ($(this).scrollTop() > 1){  
         $('header').addClass("nav-bg");
@@ -7,10 +9,10 @@ $(document).ready(function(){
         $('header').removeClass("nav-bg");
       }
     });
-
+  // nav bar bg change on scroll js ends here 
 
   
-   
+  //  what clients say section carousel
     $('.right-what-client-say-sec').slick({
         infinite: true,
         slidesToShow: 1,
@@ -20,12 +22,15 @@ $(document).ready(function(){
         prevArrow: $(".left-arrow"),
         nextArrow: $(".right-arrow"),
     });
+    // what clients say section carousel ends here
 
+
+    // blog section carousel 
     $('.blog-carousel').slick({
       infinite: true,
       slidesToShow: 2,
       slidesToScroll: 2,
-      autoplay: true,
+      // autoplay: true,
       autoplaySpeed: 2000,
       prevArrow: $(".blog-slider-left-arrow"),
       nextArrow: $(".blog-slider-right-arrow"),
@@ -64,7 +69,10 @@ $(document).ready(function(){
         // instead of a settings object
       ]
     });
+    // blog section carousel ends here
 
+
+    //=== mmenu js ===
     new Mmenu( "#m-menu", {
       "offCanvas": {
          "position": "right",
@@ -76,13 +84,63 @@ $(document).ready(function(){
       "navbars": {
            "position": "top",
            "content": [
-              "breadcrumbs",
+              "prev",
+              "title",
               "close"
            ]
         }
      
    });
+  //  mmenu js ends here 
 
+
+  // number count for stats, using jQuery animate
+  var a = 0;
+  $(window).scroll(function () {
+      var oTop = $(".counter-box").offset().top - window.innerHeight;
+      if (a == 0 && $(window).scrollTop() > oTop) {
+          $(".counter").each(function () {
+              var $this = $(this),
+                  countTo = $this.attr("data-number");
+              $({
+                  countNum: $this.text()
+              }).animate(
+                  {
+                      countNum: countTo
+                  },
+  
+                  {
+                      duration: 3000,
+                      easing: "swing",
+                      step: function () {
+                          //$this.text(Math.ceil(this.countNum));
+                          $this.text(
+                              Math.ceil(this.countNum).toLocaleString("en")
+                          );
+                      },
+                      complete: function () {
+                          $this.text(
+                              Math.ceil(this.countNum).toLocaleString("en")
+                          );
+                          //alert('finished');
+                      }
+                  }
+              );
+          });
+          a = 1;
+      }
+  });
+  // counting script ends here 
+
+
+  // AOS js 
+  AOS.init();
+  AOS.init({
+    offset: 100,
+    mirror: false,
+    disable: 'mobile',
+  });
+  // Custom AOS delay 400
 });
 
     
