@@ -667,25 +667,5 @@
         <script src="./js/main.js"></script>
         <!-- AOS script  -->
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <!-- <script src="https://assets.codepen.io/16327/gsap-latest-beta.min.js?r=3.11.2d"></script> -->
-       <script src="https://assets.codepen.io/16327/ScrollSmoother.min.js"></script>
-            <script src="https://assets.codepen.io/16327/ScrollTrigger.min.js"></script>
-        <script>
-           gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
-
-            // create the smooth scroller FIRST!
-            let smoother = ScrollSmoother.create({
-            smooth: 2,   // seconds it takes to "catch up" to native scroll position
-            effects: true // look for data-speed and data-lag attributes on elements and animate accordingly
-            });
-
-            // pin box-c when it reaches the center of the viewport, for 300px
-            ScrollTrigger.create({
-            trigger: ".box-c",
-            pin: true,
-            start: "center center",
-            end: "+=300"
-            });
-        </script>
     </body>
 </html>
